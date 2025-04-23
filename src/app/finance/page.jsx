@@ -9,7 +9,6 @@ const page = async () => {
     console.log(base_url)
     const response = await axios.get(`${base_url}/filter/${category}`);
     const data = response.data;
-    console.log("----data-----", data); // Optional: this won't show in browser, only in server logs
 
     return (
       <>
