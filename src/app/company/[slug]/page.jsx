@@ -3,7 +3,7 @@
 import CompanyDetailPage from "@/components/Company/CompanyDetailPage";
 
 const Page = ({ params }) => {
-  const { slug } =  params;
+  const { slug } = await params;
 
   return (
     <div>

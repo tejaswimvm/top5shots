@@ -1,4 +1,5 @@
 import Home from "@/components/home/Home";
+import SurveyPopup from "@/components/popupsurvey/popupsurvey";
 import BackgroundBeamwithCollision from "@/components/ui/BackgroundBeamwithCollision"
 export const metadata = {
   title: "Top 5 Shots - Latest Trends, Reviews & Insights",
@@ -6,7 +7,7 @@ export const metadata = {
     "Explore the top 5 trends, reviews, and insights across various industries. Stay updated with Top5Shots.",
   metadataBase: new URL("https://top5shots.com"),
   alternates: {
-    canonical: "./",
+    canonical: "/",
   },
 
   openGraph: {
@@ -76,26 +77,32 @@ export default function Home1() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Tech Trends",
-        item: "https://top5shots.com/tech-trends",
+        name: "News",
+        item: "https://top5shots.com/news",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Product Reviews",
-        item: "https://top5shots.com/product-reviews",
+        name: "Viral Stories",
+        item: "https://top5shots.com/viralstories",
       },
       {
         "@type": "ListItem",
         position: 4,
-        name: "Lifestyle Insights",
-        item: "https://top5shots.com/lifestyle-insights",
+        name: "Results",
+        item: "https://top5shots.com/results",
       },
       {
         "@type": "ListItem",
         position: 5,
-        name: "Business Trends",
-        item: "https://top5shots.com/business-trends",
+        name: "Match Score",
+        item: "https://top5shots.com/matchscore",
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
+        name: "Contest",
+        item: "https://top5shots.com/contest",
       },
     ],
   };
@@ -110,7 +117,7 @@ export default function Home1() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-    
+     <SurveyPopup/>
       <Home/>
       
     </div>

@@ -6,6 +6,7 @@ import AutoCarousel from "../carousel/AutoCarousel";
 import Chatbot from "../aichatbot/chatbot";
 import Crousel from "../carousel/Carousel2";
 
+
 function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 p-5">
@@ -13,7 +14,7 @@ function Home() {
         <div className="w-full lg:w-1/3">
           <Header />
         </div>
-
+        
         <div className="w-full lg:w-2/3 px-4 py-4">
           <CategoryPage />
         </div>
